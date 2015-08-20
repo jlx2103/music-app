@@ -7,13 +7,11 @@
 
 
   <title>Top5</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-
 	<div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="cover-container">
@@ -22,9 +20,9 @@
               <h3 class="masthead-brand"><i class="fa fa-headphones"></i> <%= link_to "My Jams", root_path%></h3>
               <nav>
                 <ul class="nav masthead-nav">
-                  <li class="active"><%= link_to "Top 5", root_path %></li>
-                  <li class="active"><%= link_to "Artists", artists_path %></li>
-                  <li class="active"><%= link_to "Songs", songs_path %></li>
+                  <li><%= link_to "Top 5", root_path %></li>
+                  <li><%= link_to "Artists", artists_path %></li>
+                  <li><%= link_to "Songs", songs_path %></li>
                 </ul>
               </nav>
             </div>
